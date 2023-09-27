@@ -3,6 +3,7 @@
     --bg-light-gray: #e5e5e5; 
     --bg-blue: #1b72e8; 
     --bg-dark-blue: #051e34;
+    --bg-teal: #165bba; 
 }
 
 .bg-light-gray {
@@ -54,8 +55,9 @@ a {
 
 .main-content {
     flex-grow: 1;
-    overflow: hidden;
+    overflow: auto;
 }
+
 
 /*Navbar*/
 
@@ -101,6 +103,19 @@ a {
     margin-right: 10px;
 }
 
+/*Header*/
+
+.tag-custom {
+    background-color: var(--bg-teal);
+    color: white;
+    border-radius: 10px;
+    padding: 2px 8px; 
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
 /***Media-Query***/
 
 /* Small devices (landscape phones, 576px and up) */
@@ -110,8 +125,9 @@ a {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-
+    .col-custom {
+        order: -1;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -120,7 +136,6 @@ a {
     .aside-custom {
         width: 150px;
     }
-
 
 
 }
@@ -148,4 +163,14 @@ a {
     background-color: green;
     padding: 8px;
     min-height: 50px;
+}
+
+.debug .app-bar {
+    background-color: orange;
+    padding: 50px;
+}
+
+.debug .app-body {
+    background-color: beige;
+    padding: 50px;
 }
