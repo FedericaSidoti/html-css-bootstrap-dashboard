@@ -1,0 +1,51 @@
+/*Layout esterno*/
+
+.body-custom {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar-custom {
+    height: auto; 
+    flex-shrink: 0;
+}
+
+.main-container {
+    flex-grow: 1; 
+    display: flex;
+}
+
+.aside-custom {
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+/**********DEBUG**********/
+
+.debug .navbar-custom {
+    background-color: aqua;
+    padding: 8px;
+    min-height: 20px;
+}
+
+.debug .main-container {
+    background-color: red;
+    padding: 8px;
+    min-height: 50px;
+}
+
+.debug .aside-custom {
+    background-color: rebeccapurple;
+    padding: 8px;
+}
+
+.debug .main-content {
+    background-color: green;
+    padding: 8px;
+    min-height: 50px;
+}
