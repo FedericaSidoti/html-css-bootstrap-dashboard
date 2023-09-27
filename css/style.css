@@ -1,3 +1,22 @@
+/*Variabili e classi colore*/
+:root {
+    --bg-light-gray: #e5e5e5; 
+    --bg-blue: #1b72e8; 
+    --bg-dark-blue: #051e34;
+}
+
+.bg-light-gray {
+    background-color: var(--bg-light-gray);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+
+.bg-dark-blue {
+    background-color: var(--bg-dark-blue);
+}
+
 /*Layout esterno*/
 
 .body-custom {
@@ -47,6 +66,12 @@
 .search-bar {
     background-color: #e5e5e5;
     border-radius: 10px;
+}
+
+/*Aside*/
+
+.aside-custom {
+    background-image: url(../img/sidebar-bg.png);
 }
 
 /***Media-Query***/
