@@ -17,6 +17,11 @@
     background-color: var(--bg-dark-blue);
 }
 
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
 /*Layout esterno*/
 
 .body-custom {
@@ -55,8 +60,9 @@
 /*Navbar*/
 
 .logo-small {
-    max-width: 35px;
+    max-width: 45px;
 }
+
 
 :is(input, textarea) {
     background-color: #e5e5e5;
@@ -68,10 +74,31 @@
     border-radius: 10px;
 }
 
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
 /*Aside*/
 
 .aside-custom {
     background-image: url(../img/sidebar-bg.png);
+}
+
+.list-custom {
+    list-style: none;
+}
+
+.aside-custom ul {
+    padding: 0;
+}
+
+.icon-custom {
+    width: 10px; 
+    margin-right: 10px;
 }
 
 /***Media-Query***/
@@ -93,6 +120,7 @@
     .aside-custom {
         width: 150px;
     }
+
 
 
 }
