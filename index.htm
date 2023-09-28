@@ -11,23 +11,76 @@
 <body class="body-page">
     <div class="offcanvas offcanvas-end" tabindex="-1" id="newStudent" aria-labelledby="newStudent">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
+            <form class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="InputName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="InputName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="InputSurname" class="form-label">Cognome</label>
+                            <input type="text" class="form-control" id="InputSurname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="InputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="InputAddress" class="form-label">Indirizzo</label>
+                            <input type="text" class="form-control" id="InputAddress">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="mb-3">
+                            <label for="InputCity" class="form-label">Città</label>
+                            <input type="text" class="form-control" id="InputCity">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <label for="SelectState" class="form-label">Scegli uno stato</label>
+                        <select class="form-select" id="SelectState">
+                            <option value="1">Il Nord (Stark)</option>
+                            <option value="2">La Valle (Arryn)</option>
+                            <option value="3">Terre dei Fiumi (Tully, Greyjoy)</option>
+                            <option value="4">Le Terre dell'Ovest (Lannister e Tyrell)</option>
+                            <option value="5">Le Terre della corona (Baratheon/ Lannister, ex Targaryen)</option>
+                            <option value="6">Le Terre della Tempesta (Baratheon)</option>
+                            <option value="7">Dorne( Martell)</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="mb-3">
+                            <label for="InputCap" class="form-label">CAP</label>
+                            <input type="number" class="form-control" id="InputCap">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Foto</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Salva</button>
+                <button type="submit" class="btn btn-warning">Svuota</button>
+            </form>
         </div>
     </div>
     <div class="body-custom">
@@ -119,14 +172,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="app-body debu">
+                <div class="app-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 col-lg-8">
+                            <div class="col-12 col-lg-8 mb-2">
                                 <div class="card mb-2">
                                     <div class="card-header">Prossime classi</div>
                                     <div class="card-body">
-                                        <table class="table">
+                                        <table class="table table-hover">
                                             <thead class="">
                                                 <tr class="tr">
                                                     <th class="classroom text-start" scope="col">Nome</th>
@@ -251,7 +304,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-lg-4 mb-2">
                                 <div class="card mb-2">
                                     <div class="card-header">
                                         <h3>Todo</h3>
@@ -274,11 +327,18 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="card-header">
-                                        <h3>Todo</h3>
-                                    </div>
+                                    <img src="./img/stats.jpeg" class="card-img-top" alt="statistic graphic">
                                     <div class="card-body">
-                                        
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">Lista degli utenti attivi nell'ultimo mese</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Gennaio 1200</li>
+                                        <li class="list-group-item">Febbraio 800</li>
+                                        <li class="list-group-item">Marzo 1500</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link link-primary">Visualizza il report approfondito</a>
                                     </div>
                                 </div>
                             </div>
