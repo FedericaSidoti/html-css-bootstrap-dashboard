@@ -23,6 +23,10 @@ a {
     text-decoration: none;
 }
 
+.body-page .offcanvas {
+    width: 100%;
+}
+
 /*Layout esterno*/
 
 .body-custom {
@@ -76,6 +80,8 @@ a {
     border-radius: 10px;
 }
 
+/*Utilities*/
+
 .no-margin {
     margin: 0;
 }
@@ -83,6 +89,7 @@ a {
 .no-padding {
     padding: 0;
 }
+
 
 /*Aside*/
 
@@ -116,10 +123,34 @@ a {
     white-space: nowrap;
 }
 
+/*Main*/
+
+.classroom {
+    width: 50%;
+}
+
+.img-small {
+    max-width: 20px;
+    min-width: 10px;
+}
+
+/*.tr:nth-child(2), .tr:nth-child(3) {
+    display: none;
+}*/
+
+.td-hidden, .th-hidden {
+    display: none;
+}
+
+.tr {
+    text-align: center;
+}
+
 /***Media-Query***/
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {  
+
 
 }
 
@@ -128,6 +159,14 @@ a {
     .col-custom {
         order: -1;
     }
+
+    .classroom {
+        width: 40%;
+    }
+
+    .td-hidden, .th-hidden {
+        display: table-cell;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -135,6 +174,14 @@ a {
 
     .aside-custom {
         width: 150px;
+    }
+
+.body-page .offcanvas {
+        max-width: 800px;
+    }
+
+    .classroom {
+        width: 50%;
     }
 
 
@@ -173,4 +220,21 @@ a {
 .debug .app-body {
     background-color: beige;
     padding: 50px;
+}
+
+.debug *[class^='col-'] {
+    background-color: aquamarine;
+    padding: 50px;
+    border: 1px solid black;
+}
+
+.debug *[class^='row'] {
+    background-color: bisque;
+    padding: 5px; 
+}
+
+.debug .card {
+    background-color: teal;
+    border: 1px solid salmon; 
+    padding: 50px; 
 }
