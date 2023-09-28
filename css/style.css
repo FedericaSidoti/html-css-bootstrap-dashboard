@@ -148,7 +148,7 @@ a:not(.link-primary) {
 
 /*Hover*/
 
-.li:hover {
+.list-item-custom:hover {
     background-color: #e5e5e5;
     color: var(--bg-blue);
     font-weight: 900;
