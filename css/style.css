@@ -146,6 +146,14 @@ a:not(.link-primary) {
     text-align: center;
 }
 
+/*Hover*/
+
+.li:hover {
+    background-color: #e5e5e5;
+    color: var(--bg-blue);
+    font-weight: 900;
+}
+
 /***Media-Query***/
 
 /* Small devices (landscape phones, 576px and up) */
